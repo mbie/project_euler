@@ -6,4 +6,4 @@
 #
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-puts 1.upto(999).select{|x| x % 3 == 0 or x % 5 == 0}.inject(&:+)
+puts 1.upto(999).select{|x| x % 3 == 0 || x % 5 == 0}.inject(&:+)
