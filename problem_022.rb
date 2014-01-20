@@ -18,4 +18,5 @@ class String
 end
 
 names.sort!
-puts names.map { |name| name.word_value * (names.index(name) + 1) }.reduce(:+) # => 871198282
+
+puts names.each_with_index.map { |name,i| name.word_value * (i + 1) }.reduce(:+) # => 871198282
